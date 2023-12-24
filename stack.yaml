@@ -1,0 +1,30 @@
+user-message: "WARNING: This stack project is generated."
+
+resolver: lts-21.25
+
+# We have 8 packages.
+packages:
+  - ./copilot
+  - ./copilot-c99
+  - ./copilot-core
+  - ./copilot-interpreter
+  - ./copilot-language
+  - ./copilot-libraries
+  - ./copilot-prettyprinter
+  - ./copilot-theorem
+
+extra-deps:
+  # Package versions for published packages either not on Stackage or
+  # not matching the version on Stackage for the resolver we use.
+  # These package-version extra dependencies are equivalent to cabal constraints.
+  - bitwise-1.0.0.1
+  - bv-sized-1.0.5
+  - config-value-0.8.3
+  - language-c99-0.2.0
+  - language-c99-simple-0.2.3
+  - language-c99-util-0.2.0
+  - panic-0.4.0.1
+  - parameterized-utils-2.1.7.0
+  - s-cargot-0.1.6.0
+  - what4-1.5.1
+  - zenc-0.1.2

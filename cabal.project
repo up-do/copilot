@@ -1,2 +1,29 @@
+import: https://stackage.org/lts-21.25/cabal.config
+
+-- We have 8 packages.
 packages:
-  */*.cabal
+    copilot
+  , copilot-c99
+  , copilot-core
+  , copilot-interpreter
+  , copilot-language
+  , copilot-libraries
+  , copilot-prettyprinter
+  , copilot-theorem
+
+-- Version equality constraints.
+constraints:
+    bitwise ==1.0.0.1
+  , bv-sized ==1.0.5
+  , config-value ==0.8.3
+  , language-c99 ==0.2.0
+  , language-c99-simple ==0.2.3
+  , language-c99-util ==0.2.0
+  , panic ==0.4.0.1
+  , parameterized-utils ==2.1.7.0
+  , s-cargot ==0.1.6.0
+  , what4 ==1.5.1
+  , zenc ==0.1.2
+program-options
+  ghc-options: -fhide-source-paths
+
