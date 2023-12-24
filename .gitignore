@@ -23,3 +23,5 @@ cabal.project.local~
 copilot-profiling
 .DS_Store
 .log
+.updo
+updo
